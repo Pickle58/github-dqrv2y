@@ -13,6 +13,10 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const happy = true;
 const finished = false;
 const goal = 3;
+
+const skillColor = "navy";
+const fontWeight = "bold";
+const textCase = "uppercase";
 ---
 
 <html lang="en">
@@ -28,8 +32,9 @@ const goal = 3;
 			  font-size: 4rem;
 			}
 			.skill {
-				color: green;
-    			font-weight: bold;
+				color: var(--skillColor);
+    			font-weight: var(--fontWeight);
+    			text-transform: var(--textCase);
   			}
 		  </style>
 	</head>
